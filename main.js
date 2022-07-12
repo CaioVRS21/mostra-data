@@ -2,13 +2,11 @@ function showDate(){
     const data = new Date();
     const dia = data.getDate();
     const diaNome = checkDia(data.getDay())
-    //const mes = addZeroEsquerda(data.getMonth()+1);
     const nomeMes = checkMes(data.getMonth()+1)
     const ano = data.getFullYear();
     const hora = addZeroEsquerda(data.getHours());
     const minuto = addZeroEsquerda(data.getMinutes());
     titulo.innerHTML = `${diaNome}, ${dia} de ${nomeMes} ${ano}, ${hora}:${minuto}`
-    //console.log(dia)
 }
 
 function checkDia(num){
@@ -89,4 +87,3 @@ function checkMes(num){
 function addZeroEsquerda(num){
     return num < 10 ? `0${num}` : `${num}`
 }
-showDate()
