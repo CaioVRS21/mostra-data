@@ -6,7 +6,7 @@ function showDate(){
     const ano = data.getFullYear();
     const hora = addZeroEsquerda(data.getHours());
     const minuto = addZeroEsquerda(data.getMinutes());
-    titulo.innerHTML = `${diaNome}, ${dia} de ${nomeMes} ${ano}, ${hora}:${minuto}`
+    titulo.innerHTML = `${diaNome}, ${dia} de ${nomeMes} de ${ano}, ${hora}:${minuto}`
 }
 
 function checkDia(num){
